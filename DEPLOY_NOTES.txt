@@ -1,0 +1,23 @@
+
+FULL SECURE UNISCOPE PACKAGE
+Includes all uploaded files plus Netlify function for Paystack verification.
+
+Important:
+- Set PAYSTACK_SECRET_KEY in Netlify environment variables before deploying.
+- Do NOT commit secret keys to source control.
+
+Files included:
+- index.html
+- default_university_programmes_generated.js
+- PROGRAMME_SOURCES.md
+- needsReview.log
+- README_DEPLOY.md
+- bg-placeholder.jpg (background image)
+- logo-placeholder.png (logo)
+- netlify/functions/verify-payment.js (server-side verification - user-provided)
+- netlify.toml
+
+How to deploy:
+1. Upload this folder to Netlify or push to your GitHub repo and connect the repo.
+2. Set PAYSTACK_SECRET_KEY in Site settings -> Build & deploy -> Environment.
+3. Publish directory: root (.). Build command: none.
